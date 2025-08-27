@@ -18,7 +18,7 @@ public class LoginPage {
     }
 
     public SelenideElement error() {
-        return $("[data-test-id='error']");
+        return $("[data-test='error']");
     }
 
 }
