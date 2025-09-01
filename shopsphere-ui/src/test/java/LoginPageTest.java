@@ -9,11 +9,11 @@ import org.junit.jupiter.params.provider.CsvSource;
 import pages.LoginPage;
 
 public class LoginPageTest {
-    @BeforeAll
+    /*@BeforeAll
     static void setUp() {
         Configuration.browser = "chrome";
         Configuration.baseUrl = "https://www.saucedemo.com";
-    }
+    }*/
 
     @Test
     void loginPageHasUsernameField() {
