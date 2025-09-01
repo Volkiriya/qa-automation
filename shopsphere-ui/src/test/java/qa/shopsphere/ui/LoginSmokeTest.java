@@ -1,21 +1,22 @@
 package qa.shopsphere.ui;
 
-import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selenide.$;
-
-import static com.codeborne.selenide.Selenide.open;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import qa.shopsphere.ui.pages.LoginPage;
 
 public class LoginSmokeTest {
+
     @Test @Tag("smoke")
     void openLoginPage() {
-        open("/");
-        $("#user-name").shouldBe(visible);
+        new LoginPage()
+                .open()
+                .shouldBeOpen();
     }
 
-    @Test
-    @Tag("smoke")
-    void canLoginWithValidCreds() {
+    @Test @Tag("smoke")
+    void loginButtonShouldBeVisible() {
+        new LoginPage()
+                .open()
+                .loginButtonIsVisible();
     }
 }

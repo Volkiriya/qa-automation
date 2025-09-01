@@ -21,4 +21,9 @@ public class LoginPage {
         return $("[data-test='error']");
     }
 
+    public boolean loginButtonIsVisible() {
+        $("#login-button").click();
+        return true;
+    }
+
 }
