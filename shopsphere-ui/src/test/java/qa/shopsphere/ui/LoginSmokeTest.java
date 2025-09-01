@@ -17,6 +17,5 @@ public class LoginSmokeTest {
     @Test
     @Tag("smoke")
     void canLoginWithValidCreds() {
-
     }
 }
